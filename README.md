@@ -5,3 +5,4 @@
 ![cat](https://i.imgur.com/dc1PU8j.jpeg) 
 
 從cs code做版本控制
+設定好email再傳播一次
