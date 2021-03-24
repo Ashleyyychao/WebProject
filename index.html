@@ -5,133 +5,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>產業新尖兵</title>
+    <title>練習</title>
+    <!-- <link rel='stylesheet' href='main.css'> -->
+    <!-- <img src="https://fakeimg.pl/350x200/ff0000/000"> -->
     <style>
-        #all {
-            background: url(img_flwr.gif) right bottom no-repeat, url(https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg) left top repeat;
-            padding: 15px;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+
+            /* 這樣設是為了讓每個超連結中的空白為0 */
+            font-size: 0;
+            width: 100%;
+
+        }
+
+        .title p {
+            color: rgb(29, 28, 28);
+            padding: 14px 16px;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .sign {
+
+            float: right;
+            margin: 0;
+            padding: 10px 16px;
+        }
+
+        .title a {
+
+            display: inline-block;
+            color: rgb(29, 28, 28);
+            padding: 14px 16px;
+            text-decoration: none;
+            /* 撐開title的背景 */
+            font-size: 16px;
+            float: right;
+
+        }
+
+        .container {
+            width: 1024px;
+
+            margin: auto;
+            display: flex;
+        }
+
+        .iteam {
+            border: 1px solid black;
+            height: 300px;
+            width: 330px;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+
+
+        }
+
+        .iteam p {
+            padding-top: 10px;
+        }
+
+
+        .iteam img {
+            width: 100%;
+
+        }
+
+        .iteam .tab {
+            background-color: rgb(245, 29, 29);
+            color: aliceblue;
+            padding: 6px 10px;
+            position: absolute;
+            top: -10px;
+            right: -3px;
+
+
+        }
+
+
+        .text_color {
+            ;
+            padding: 10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-decoration: none;
+
+        }
+
+        .text_color a {
+            text-decoration: none;
+            color:rgb(59, 58, 57);
+        }
+
+        .text_color h2 {
+            padding: 10px;
+            padding-top: 50px;
+        }
+
+        .foot {background-color: rgb(243, 234, 197);}
+
+        fooder h2 {
+          
+            margin: 10px;
+            padding: 10px;
+        }
+
+        fooder p {
+            padding: 10px;
+            margin: 0px;
+        }
+
+        fooder a {
+            padding: 10px;
+            color:rgb(59, 58, 57);
+            text-decoration: none;
         }
     </style>
-
 </head>
 
 <body>
+    <div class='title'>
+        <p>My Life. My Blog.</p>
 
-    <div id='all'>
-        <a href="#anchor">最底</a>
-        <h1 style="font-size: 60px">My Life. My Blog.</h1>
+        <a href="#" title="登入" target="_blank" class='sign'>
+            <img src="../a/img/user.png" width="20" height="20" alt="schedule"></a>
+        <a href="#" title="收藏" target="_blank" class='sign'>
+            <img src="../a/img/star.png" width="20" height="20" alt="schedule"></a>
+        <a href="#" title="購物籃" target="_blank" class='sign'>
+            <img src="../a/img/shopping-bag.png" width="20" height="20" alt="schedule"></a>
 
-
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
-        </ul>
-        <h2>Exercise練習</h2>
-        <a href="Exercise/index.html" title="去練習集" target="_blank">
-            <img src="a/img/pencil.png" width="20" height="20" alt="PENCIL">
-            LINK</a>
-        <h2>Exercise練習</h2>
-        <a href="LAB/index.html" title="去看課表" target="_blank">
-            <img src="a/img/calendar.png"
-                width="20" height="20" alt="schedule">
-            LINK</a>
-
-        <h2>Blog</h2>
-        <a href="LAB/index.html" title="去網站" target="_blank">還沒放網站</a>
-        
-            </br>
-            </br>
-            </br>
-        <h2>Contact</h2>
-            <a href="https://www.facebook.com/">
-                <img src="a/img/facebook.png" 
-                width="20" height="20" alt="facebook">facebook
-            </a></br>
-
-            <a href="mailto:hege@example.com">
-                <img src="a/img/gmail.png" 
-                width="20" height="20" alt="mail">mail
-            </a></br>
-
-            <a href="tel:+886-987-654-321">
-                <img src="a/img/telephone-symbol-button.png" 
-                width="20" height="20" alt="phone">phone
-            </a></br>
-            <h3 id="anchor">直接到最底</h3>
-
-        
-
-           
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
 
 
     </div>
-    <!-- </br>
+
+    <div class='content'>
+        <img src='https://cdn.pixabay.com/photo/2021/02/15/08/35/breakwater-6017041_1280.jpg' width="100%">
+
+    </div>
     </br>
     </br>
-    <!-- ctrl+/ 可以註解掉  -->
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
 
-    <!-- <hr width="100px" align="light">
-    <h4 style="font-size: 40px">貓咪貓咪貓咪</h4>
-    <p>我們提供的服務</p>
-    <ul>
-        <li>貓咪按摩</li>
-        <li>貓咪套餐</li>
-        <li>貓咪賣萌</li>
-    </ul>
-    <p>客戶等級</p>
-    <ol type="1">
-        <li>家主本人</li>
-        <li>有錢人</li>
-        <li>vip會員</li>
-    </ol>
+    <div class="container">
+        <div class="iteam">
+            <div class='tab'>Hot</div>
+            <img src='https://picsum.photos/250/150'>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam magnam, vel quasi amet iusto ullam
+                pariatur itaque atque dolore similique dicta sed aliquam fugiat non saepe ipsum hic animi.</p>
 
-    <ol start="98">
-        <li>窮人</li>
-        <li>打lol的人</li>
-        <li>雪寶本人</li>
-    </ol>
+        </div>
+        <div class="iteam">
+            <div class='tab'>Hot</div>
+            <img src='https://picsum.photos/250/150'>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam magnam, vel quasi amet iusto ullam
+                pariatur itaque atque dolore similique dicta sed aliquam fugiat non saepe ipsum hic animi.</p>
+        </div>
+        <div class="iteam">
+            <div class='tab'>Hot</div>
+            <img src='https://picsum.photos/250/150'>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam magnam, vel quasi amet iusto ullam
+                pariatur itaque atque dolore similique dicta sed aliquam fugiat non saepe ipsum hic animi.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="iteam"><img src='https://picsum.photos/250/150'>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam magnam, vel quasi amet iusto ullam
+                pariatur itaque atque dolore similique dicta sed aliquam fugiat non saepe ipsum hic animi.</p>
+        </div>
+        <div class="iteam"><img src='https://picsum.photos/250/150'>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam magnam, vel quasi amet iusto ullam
+                pariatur itaque atque dolore similique dicta sed aliquam fugiat non saepe ipsum hic animi.</p>
+        </div>
+        <div class="iteam"><img src='https://picsum.photos/250/150'>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam magnam, vel quasi amet iusto ullam
+                pariatur itaque atque dolore similique dicta sed aliquam fugiat non saepe ipsum hic animi.</p>
+        </div>
+    </div>
 
-    <table border="1">
-        <caption>貓咪<span style='color:crimson'>價目表</span></caption>
-        <thead>
-            <tr>
-                <th>品項</th>
-                <th>價錢</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>英短</td>
-                <td>$20,000</td>
-            </tr>
-            <tr>
-                <td>美短</td>
-                <td>$10,000</td>
-            </tr>
-            <tr>
-                <td>雪寶</td>
-                <td>free</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <p title="隱藏字是我">悄悄話</p>
-    <p style='color: rgb(255, 99, 71, 0.5)''>我好可憐拜託<br />給我錢錢money~money~money~</p>
-    <img src="https://i.imgur.com/SkwYKKn.gif" width="400" height="300" alt="拜託貓咪">
-    <a href="https://www.google.com.tw/">搜尋</a>
-<h1>製作者資訊</h1>
-<hr> 
-<a href="Exercise/index.html" title="去搜尋" target="_blank" >
-   <img src="https://i.imgur.com/2r42CEQ.gif" width="20" height="20" alt="home" >
-練習</a></br>
 
-        <a href="https://www.facebook.com/">Facebook</a></br>
+    <div class="text_color">
 
-        <a href="mailto:hege@example.com">hege@example.com</a></br>
-        <a href=' tel:+886-987-654-321'>phone</a></br>
-    <h1 id="anchor">直接到最底</h1> -->
+
+        <h2>Exercise練習</h2>
+        <a href="Exercise/index.html" title="去練習集" target="_blank">
+            <img src="../a/img/pencil.png" width="20" height="20" alt="PENCIL">
+            LINK</a>
+        <h2>Exercise練習</h2>
+        <a href="LAB/index.html" title="去看課表" target="_blank">
+            <img src="../a/img/calendar.png" width="20" height="20" alt="schedule">
+            LINK</a>
+
+
+    </div>
+
+    <div class='foot'>
+        <fooder>
+            <h2>Contact</h3>
+                <p><a href="https://www.facebook.com/">
+                        <img src="../a/img/facebook.png" width="20" height="20" alt="facebook">facebook
+                    </a></p>
+
+                <p> <a href="mailto:hege@example.com">
+                        <img src="../a/img/gmail.png" width="20" height="20" alt="mail">mail
+                    </a></p>
+
+                <p><a href="tel:+886-987-654-321">
+                        <img src="../a/img/telephone-symbol-button.png" width="20" height="20" alt="phone">phone
+                    </a></p>
+
+        </fooder>
+    </div>
 </body>
 
 </html>
