@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<style>
+  
+    footer {
+        text-align: center;
+        background-color: rgb(226, 223, 218);
+    }
+
+    .item {
+        text-decoration: none;
+    }
+</style>
+
+<body class="container-fluid m-0 p-0">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">選課系統</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">我的課表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            最新公告
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">選課須知</a></li>
+                            <li><a class="dropdown-item" href="#">意見信箱</a></li>
+                            <li><a class="dropdown-item" href="#">忘記密碼</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+ 
+        <main class="container my-5 ">
+            <div class="row">
+                <div class="col-md-9 d-flex justify-content-center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class='table-warning'>
+                                <th scope="col"></th>
+                                <th scope="col">星期一</th>
+                                <th scope="col">星期二</th>
+                                <th scope="col">星期三</th>
+                                <th scope="col">星期四</th>
+                                <th scope="col">星期五</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class='table-warning'>第一節</td>
+                                <td rowspan="2" class='align-middle text-center'>保健營養學</td>
+                                <td rowspan="2" class='align-middle text-center'>臨床營養特論與實驗</td>
+                                <td class='align-middle text-center'>人文社會科學</td>
+                                <td class='align-middle text-center'>營養學</td>
+                                <td class='align-middle text-center'>英文</td>
+                            </tr>
+                            <tr>
+                                <td class='table-warning'>第二節</td>
+                                <!-- <td>保健營養學</td> -->
+                                <!-- <td>臨床營養特論與實驗</td> -->
+                                <td class='align-middle text-center'>計算機概論</td>
+                                <td class='align-middle text-center'>人文社會科學</td>
+                                <td rowspan="3" class='align-middle text-center'>營養學</td>
+
+                            </tr>
+                            <tr>
+                                <td class='table-warning'>第三節</td>
+                                <td rowspan="2" class='align-middle text-center'>英文</td>
+                                <!-- <td rowspan="2">臨床營養特論與實驗</td> -->
+                                <td class='align-middle text-center'>計算機概論</td>
+                                <td rowspan="2" class='align-middle'>通識</td>
+                                <!-- <td align="center" >營養學</td> -->
+                                <td rowspan="2" class='align-middle text-center'>計算機概論</td>
+                            </tr>
+                            <tr>
+                                <td class='table-warning'>第四節</td>
+                                <!-- <td>英文</td> -->
+                                <!-- <td>臨床營養特論與實驗</td> -->
+                                <td class='align-middle text-center'>人文社會科學</td>
+                                <!-- <td>通識</td> -->
+                                <!-- <td align="center">營養學</td> -->
+                                <!-- <td>數學</td> -->
+
+                            </tr>
+                            <tr>
+                                <td colspan="6" class='text-center table-danger'>中午休息時間</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td class='table-warning'>第五節</td>
+                                <td rowspan="2" class=' align-middle text-center'>營養學</td>
+                                <td rowspan="2" class='align-middle text-center'>營養學</td>
+                                <td rowspan="2" class='align-middle text-center'>英文</td>
+                                <td rowspan="2" class='align-middle text-center'>通識</td>
+                                <td class='align-middle text-center'>人文社會科學</td>
+                            </tr>
+                            <tr>
+                                <td class='table-warning'>第六節</td>
+                                <!-- <td>營養評估與諮詢</td> -->
+                                <!-- <td>膳食設計管理與實驗</td> -->
+                                <!-- <td>進階調理保健技術見習Ⅱ</td> -->
+                                <!-- <td>通識</td> -->
+                                <td class='align-middle text-center'>音樂</td>
+                            </tr>
+                            <tr>
+                                <td class='table-warning'>第七節</td>
+                                <td rowspan="2" class='align-middle'>人文社會科學</td>
+                                <!-- <td>膳食設計管理與實驗</td> -->
+                                <!-- <td>進階調理保健技術見習Ⅱ</td> -->
+                                <td class='align-middle text-center'>人文社會科學</td>
+                                <td rowspan="2" class='align-middle text-center'>計算機概論</td>
+                                <td rowspan="2" class='align-middle text-center'>音樂</td>
+                                <td rowspan="2" class="align-middle"></td>
+                            </tr>
+                            <tr>
+                                <td class='table-warning'>第八節</td>
+                                <!-- <td>人文社會科學</td> -->
+                                <!-- <td>膳食設計管理與實驗</td> -->
+                                <!-- <td>進階調理保健技術見習Ⅱ</td> -->
+                                <td class='align-middle text-center'>音樂</td>
+                                <!-- <td></td> -->
+                                <!-- <td align="center">音樂</td> -->
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3 ">
+                    <h3>系統公告</h3>
+                    <div class='item d-flex flex-column my-4'>
+                        <div class='my-1'><a href='#'>《課註組》109學年【行事曆】</a></div>
+                        <div class='my-1'> <a href='#'>校際選課程序須知</a></div>
+                        <div class='my-1'><a href='#'>【系統公告】瀏覽器的建議</a></div>
+                        <div class='my-1'><a href='#'>《課註組》空白【學生報告書】</a></div>
+                        <div class='my-1'><a href='#'>登入/登出系統項知</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+    <footer class='m-0' >
+        <p class='py-2'> © 中國醫藥大學 電算與網路中心軟體發展組設計. 版本：2.0.0.25<br>
+            Copyright © 2021 Computer and Network Center. All rights reserved</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

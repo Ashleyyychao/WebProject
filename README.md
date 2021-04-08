@@ -1,14 +1,13 @@
-# WebProject
+## Ashley github練習地
+使用 github 建立一個屬於我自己的網站
 
-產業新尖兵web基礎程式設計git gui練習
-本地更改版本測試
-![cat](https://i.imgur.com/dc1PU8j.jpeg) 
+### 使用到的純文字編輯器操作系統
+- VSCODE https://code.visualstudio.com/
 
-added on develop branch 123
-added on develop branch 456
-added on develop branch 456
+### 透過 git 工具上傳及維護網站
+使用GitKraken作為個人管理的git工具
 
-從cs code做版本控制
-設定好email再傳播一次
-test
-123
+### 練習內容
+- 初期熟悉html,css的使用
+- 使用flex,grid 做網頁切版
+- 使用 bootstrap 規劃網站版面

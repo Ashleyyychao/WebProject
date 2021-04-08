@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(240, 127, 93);
+
+    }
+
+    .nav_left {
+        margin: 20px;
+        padding-left: 10px;
+        font-size: larger;
+        font-style: italic;
+        font-weight: bolder;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .nav_right {
+        font-size: larger;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .items {
+        font-family: 標楷體;
+        margin: 10px 20px;
+        color: rgb(3, 3, 219)
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        flex-grow: 1;
+    }
+
+    .main_left {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        width: 30%;
+        align-items: flex-end;
+    }
+
+
+    span {
+        background-color: blanchedalmond;
+        font-family: 標楷體;
+        font-size: 20px;
+        width: fit-content;
+        border: 1px solid black;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .main_left a {
+        color: rgb(3, 3, 219);
+        font-family: 標楷體;
+        background-color: blanchedalmond;
+        font-size: 20px;
+        width: fit-content;
+        border: 1px dashed black;
+        text-decoration: none;
+        padding: 5px;
+
+    }
+
+    .main_right {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 20px 20px;
+    }
+
+    .img_items {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        height: fit-content;
+        margin: 0px 5px;
+    }
+
+    .img_items p:nth-child(2) {padding: 5px;font-size: smaller;}
+    button{margin-left: 40px;}
+
+
+    .img_items p:nth-child(3) {
+        font-size: x-large;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* .img_items img{width: 100%;height: 160px ; } */
+    .img_items img{width: 190px;height: 190px ;}
+
+    footer div {
+        background-color: rgb(105, 105, 105);
+        color: rgb(243, 243, 243);
+        padding: 15px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="nav_left">MyShop</div>
+        <div class="nav_right">
+            <div class="items">商品</div>
+            <div class="items">購物車</div>
+        </div>
+    </nav>
+    <main>
+        <div class="main_left">
+            <span>商品分類</span>
+            <a href='#'>所有商品</a>
+            <a href='#'>暢銷商品</a>
+            <a href='#'>本日精選</a>
+            <a href='#'>新品上架</a>
+        </div>
+        <div class="main_right">
+            <div class="img_items">
+                <img src='https://i.imgur.com/ZMpETy0b.gif'>
+                <p>蛋糕<button style='margin-left: 80px;'>加入購物車</button></p>
+                <p>NT$150</p>
+            </div>
+            <div class="img_items">
+                <img src='https://i.imgur.com/ODZ7Zpzb.jpg'>
+                <p>滿滿的甜心<button>加入購物車</button></p>
+                <p>NT$300</p>
+            </div>
+            <div class="img_items">
+                <img src='https://i.imgur.com/qT3MWAbb.jpg'>
+                <p>紅色的<button style='margin-left: 70px;'>加入購物車</button></p>
+                <p>NT$666</p>
+            </div>
+            <div class="img_items">
+                <img src='https://i.imgur.com/2G16qPab.jpg'>
+                <p>蛋糕<button style='margin-left: 80px;'>加入購物車</button></p>
+                <p>NT$85</p>
+            </div>
+            <div class="img_items">
+                <img src='https://i.imgur.com/fziT4jzb.gif'>
+                <p>魔術方塊?<button style='margin-left: 47px;'>加入購物車</button></p>
+                <p>NT$999</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            © 2021 Myshop All right reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>

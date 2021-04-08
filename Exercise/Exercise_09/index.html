@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: grid;
+            width: 800px;
+            height: 500px;
+font-weight: bold;
+            grid-template-rows: 30px 5fr 30px;
+            text-align: center;
+
+
+        }
+
+        header {
+            grid-column: 1/3;
+            background-color: rgb(162, 213, 236);
+
+        }
+
+        main {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column: 1/3;
+
+        }
+
+
+
+        .left {
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 50px 3fr 3fr;
+        }
+
+        .left_1 {
+            border: 1px solid black;
+        }
+
+        .right_1 {
+            border: 1px solid black;
+        }
+
+        .left_2,
+        .left_3 {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .main_item {
+            border: 1px solid black;
+        }
+
+        .main_item_nor {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .item_4 {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main_item_bottom {
+            display: grid;
+            grid-template-rows: 3fr 1fr;
+        }
+
+        .main_item_top {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+
+        }
+
+        .main_item_green {
+            background-color: darkgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main_item_green1 {
+            background-color: rgb(75, 209, 75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 50px 3fr 3fr;
+        }
+
+        .right_1,
+        .left_1 {
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+
+        .right_2 {
+            display: grid;
+            grid-template-rows: 3fr 1fr;
+        }
+
+        .item_r_top {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .item_r_2_2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .item_r_bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .item_r_pink {
+            border: 1px solid black;
+            background-color: rgb(250, 193, 220);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item_r {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item_r_green {
+            border: 1px solid black;
+            background-color: rgb(54, 173, 70);
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0px;
+
+
+
+        }
+
+        .item_r_pink1 {
+            border: 1px solid black;
+            background-color: rgb(243, 77, 207);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .right_3 {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+
+        }
+
+
+        footer {
+            grid-column: 1/3;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: yellow
+
+        }
+
+        .footer_con {
+            display: ;
+        }
+
+        .footer_item_bottom{border-bottom: dashed;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>資產負債表</header>
+        <main>
+
+            <div class="left">
+                <div class="left_1">資產
+                </div>
+                <div class="left_2">
+                    <div class="main_item_green1">流動資產</div>
+                    <div class="main_item_nor">
+                        <div class="item_4">現金</div>
+                        <div class="item_4">存貨</div>
+                        <div class="item_4">應收帳款</div>
+                        <div class="item_4"></div>
+                    </div>
+                    <div class="main_item_nor">
+                        <div class="item_4">399,526</div>
+                        <div class="item_4">819,954</div>
+                        <div class="item_4">945,494</div>
+                        <div class="item_4">2,164,974</div>
+                    </div>
+                </div>
+                <div class="left_3">
+                    <div class="main_item_green">非流動資產</div>
+                    <div class="item_4">固定資產</div>
+                    <div class="main_item_nor">
+                        <div class="item_4"></div>
+                        <div class="item_4"></div>
+                        <div class="item_4">1,361,096</div>
+                        <div class="item_4"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="right_1">負債及股份權益</div>
+                <div class="right_2">
+                    <div class="item_r_top">
+                        <div class="item_r_pink">流動負債</div>
+                        <div class="item_r_2_2">
+                            <div class="item_r">短期借款</div>
+                            <div class="item_r">1,634,870</div>
+                            <div class="item_r"></div>
+                            <div class="item_r">1,912,740</div>
+                            <div class="item_r">應負帳款</div>
+                            <div class="item_r">277,870</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="item_r_bottom">
+                        <div class="item_r_pink1">非流動負債</div>
+                        <div class="item_r">長期借款</div>
+                        <div class="item_r">69,600</div>
+                    </div>
+                </div>
+
+                <div class="right_3">
+
+                    <div class="item_r_bottom">
+                        <div class="item_r_pink">負債合計</div>
+                        <div class="item_r"></div>
+                        <div class="item_r">1,982,360</div>
+                    </div>
+
+
+
+                    <div class="item_r_top">
+                        <div class="item_r_green">
+                            <p>股東權益</p>
+                            <p>股東權益合計</p>
+                        </div>
+                        <div class="item_r_2_2">
+                            <div class="item_r">稅本</div>
+                            <div class="item_r">1,102,186</div>
+                            <div class="item_r">保留盈餘</div>
+                            <div class="item_r">441,544</div>
+                            <div class="item_r"></div>
+                            <div class="item_r">1,543,730</div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </main>
+
+        <footer>
+            <div class="footer_item">
+                資產合計
+            </div>
+            <div class="footer_item">
+
+            </div>
+            <div class="footer_item_bottom">
+                3,526,070
+            </div>
+            <div class="footer_item">
+                負債及股東權益
+            </div>
+            <div class="footer_item">
+
+            </div>
+
+            <div class="footer_item_bottom">
+                3,526,070
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
