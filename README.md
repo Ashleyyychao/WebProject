@@ -1,6 +1,3 @@
-## Ashley github練習地
-使用 github 建立一個屬於我自己的網站
-
 ### 使用到的純文字編輯器操作系統
 - VSCODE https://code.visualstudio.com/
 
